@@ -9,14 +9,11 @@ import SwiftUI
 
 struct PrimaryButton: View {
     let text: String
-    
-    @Binding var isAlertVisible: Bool
-    @Binding var sliderValue: Double
-    @Binding var game: Game
+    let action: () -> Void
     
     var body: some View {
         Button {
-            isAlertVisible.toggle()
+            action()
         } label: {
             Text(text.uppercased())
         }
@@ -31,22 +28,6 @@ struct PrimaryButton: View {
         .cornerRadius(21)
         .bold()
         .font(.title3)
-        .alert(
-            "Hello there!",
-            isPresented: $isAlertVisible,
-            actions: {
-                Button {
-                    
-                } label: {
-                    Text("Awesome")
-                }
-
-            },
-            message: {
-                let roundedSliderValue = Int(sliderValue.rounded())
-                Text("You scored \(game.points(for: roundedSliderValue)) points.")
-            }
-        )
     }
 }
 
@@ -65,7 +46,7 @@ struct RoundedButton: View {
 struct ButtonViews_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 8) {
-            PrimaryButton(text: "Sample", isAlertVisible: .constant(false), sliderValue: .constant(50), game: .constant(Game()))
+            PrimaryButton(text: "Sample") {}
             RoundedButton(image: Image.list, action: {})
         }
     }
