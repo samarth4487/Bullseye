@@ -32,6 +32,8 @@ struct RoundedTextView: View {
             .font(.title3)
             .frame(width: 68, height: 56)
             .foregroundColor(Color.textColor)
+            .lineLimit(1)
+            .minimumScaleFactor(0.1)
             .overlay(
                 RoundedRectangle(cornerRadius: 21)
                     .strokeBorder(Color.buttonStrokeColor, lineWidth: 2)
