@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1003FE4E2A2740AB0080F84B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003FE4D2A2740AB0080F84B /* Image.swift */; };
+		1003FE502A274A1F0080F84B /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003FE4F2A274A1F0080F84B /* RoundedViews.swift */; };
 		1044FD2929E869DB00A34D0A /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD2829E869DB00A34D0A /* BullseyeApp.swift */; };
-		1044FD2B29E869DB00A34D0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD2A29E869DB00A34D0A /* ContentView.swift */; };
+		1044FD2B29E869DB00A34D0A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD2A29E869DB00A34D0A /* GameView.swift */; };
 		1044FD2D29E869DC00A34D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1044FD2C29E869DC00A34D0A /* Assets.xcassets */; };
 		1044FD3029E869DC00A34D0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1044FD2F29E869DC00A34D0A /* Preview Assets.xcassets */; };
 		1044FD3A29E869DC00A34D0A /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD3929E869DC00A34D0A /* BullseyeTests.swift */; };
 		1044FD4429E869DC00A34D0A /* BullseyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD4329E869DC00A34D0A /* BullseyeUITests.swift */; };
 		1044FD4629E869DC00A34D0A /* BullseyeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD4529E869DC00A34D0A /* BullseyeUITestsLaunchTests.swift */; };
 		1044FD5629E8848000A34D0A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD5529E8848000A34D0A /* Game.swift */; };
+		10C43D362A270F33000154FA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C43D352A270F33000154FA /* Color.swift */; };
+		10C43D382A2712BC000154FA /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C43D372A2712BC000154FA /* TextViews.swift */; };
+		10C43D3A2A271344000154FA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C43D392A271344000154FA /* String.swift */; };
+		10C43D3C2A271592000154FA /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C43D3B2A271592000154FA /* SliderView.swift */; };
+		10C43D3E2A2717F7000154FA /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C43D3D2A2717F7000154FA /* ButtonViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1003FE4D2A2740AB0080F84B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		1003FE4F2A274A1F0080F84B /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		1044FD2529E869DB00A34D0A /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1044FD2829E869DB00A34D0A /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
-		1044FD2A29E869DB00A34D0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1044FD2A29E869DB00A34D0A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		1044FD2C29E869DC00A34D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1044FD2F29E869DC00A34D0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1044FD3529E869DC00A34D0A /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +55,11 @@
 		1044FD4329E869DC00A34D0A /* BullseyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeUITests.swift; sourceTree = "<group>"; };
 		1044FD4529E869DC00A34D0A /* BullseyeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1044FD5529E8848000A34D0A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		10C43D352A270F33000154FA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		10C43D372A2712BC000154FA /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		10C43D392A271344000154FA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		10C43D3B2A271592000154FA /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		10C43D3D2A2717F7000154FA /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 				1044FD5429E8846A00A34D0A /* App */,
 				1044FD5329E8845D00A34D0A /* Models */,
 				1044FD5229E8845600A34D0A /* Views */,
+				10C43D322A270F00000154FA /* Helpers */,
 				1044FD2E29E869DC00A34D0A /* Preview Content */,
 			);
 			path = Bullseye;
@@ -132,7 +147,11 @@
 		1044FD5229E8845600A34D0A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1044FD2A29E869DB00A34D0A /* ContentView.swift */,
+				1044FD2A29E869DB00A34D0A /* GameView.swift */,
+				10C43D372A2712BC000154FA /* TextViews.swift */,
+				10C43D3B2A271592000154FA /* SliderView.swift */,
+				10C43D3D2A2717F7000154FA /* ButtonViews.swift */,
+				1003FE4F2A274A1F0080F84B /* RoundedViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +171,16 @@
 				1044FD2C29E869DC00A34D0A /* Assets.xcassets */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		10C43D322A270F00000154FA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				10C43D352A270F33000154FA /* Color.swift */,
+				10C43D392A271344000154FA /* String.swift */,
+				1003FE4D2A2740AB0080F84B /* Image.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1044FD2B29E869DB00A34D0A /* ContentView.swift in Sources */,
+				10C43D3A2A271344000154FA /* String.swift in Sources */,
+				1003FE4E2A2740AB0080F84B /* Image.swift in Sources */,
+				1003FE502A274A1F0080F84B /* RoundedViews.swift in Sources */,
+				1044FD2B29E869DB00A34D0A /* GameView.swift in Sources */,
+				10C43D362A270F33000154FA /* Color.swift in Sources */,
 				1044FD5629E8848000A34D0A /* Game.swift in Sources */,
+				10C43D382A2712BC000154FA /* TextViews.swift in Sources */,
 				1044FD2929E869DB00A34D0A /* BullseyeApp.swift in Sources */,
+				10C43D3E2A2717F7000154FA /* ButtonViews.swift in Sources */,
+				10C43D3C2A271592000154FA /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,8 +487,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,8 +516,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

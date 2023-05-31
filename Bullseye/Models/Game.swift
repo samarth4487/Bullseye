@@ -9,8 +9,8 @@ import Foundation
 
 struct Game {
     private let maxScore = 100
-    private let score: Int = 0
-    private let round: Int = 1
+    let score: Int = 0
+    let round: Int = 1
     
     let target: Int = Int.random(in: 1 ... 100)
     
