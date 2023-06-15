@@ -55,6 +55,32 @@ struct LabelText: View {
     }
 }
 
+struct BodyText: View {
+    let text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.subheadline)
+            .fontWeight(.semibold)
+            .multilineTextAlignment(.center)
+            .lineSpacing(12)
+    }
+}
+
+struct ButtonText: View {
+    let text: String
+    
+    var body: some View {
+        Text(text)
+            .bold()
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color.accentColor)
+            .foregroundColor(.white)
+            .cornerRadius(12)
+    }
+}
+
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
@@ -62,6 +88,8 @@ struct TextViews_Previews: PreviewProvider {
             BigNumberText(text: "Sample")
             SliderText(text: "Sample")
             LabelText(text: "Sample")
+            BodyText(text: "Sample")
+            ButtonText(text: "Sample")
         }
     }
 }

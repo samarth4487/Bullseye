@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1003FE4E2A2740AB0080F84B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003FE4D2A2740AB0080F84B /* Image.swift */; };
 		1003FE502A274A1F0080F84B /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003FE4F2A274A1F0080F84B /* RoundedViews.swift */; };
+		10439D0B2A38792E004C3C23 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10439D0A2A38792E004C3C23 /* PointsView.swift */; };
 		1044FD2929E869DB00A34D0A /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD2829E869DB00A34D0A /* BullseyeApp.swift */; };
 		1044FD2B29E869DB00A34D0A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD2A29E869DB00A34D0A /* GameView.swift */; };
 		1044FD2D29E869DC00A34D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1044FD2C29E869DC00A34D0A /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1003FE4D2A2740AB0080F84B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1003FE4F2A274A1F0080F84B /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
+		10439D0A2A38792E004C3C23 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		1044FD2529E869DB00A34D0A /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1044FD2829E869DB00A34D0A /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		1044FD2A29E869DB00A34D0A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				10C43D3B2A271592000154FA /* SliderView.swift */,
 				10C43D3D2A2717F7000154FA /* ButtonViews.swift */,
 				1003FE4F2A274A1F0080F84B /* RoundedViews.swift */,
+				10439D0A2A38792E004C3C23 /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				10C43D3A2A271344000154FA /* String.swift in Sources */,
 				1003FE4E2A2740AB0080F84B /* Image.swift in Sources */,
 				1003FE502A274A1F0080F84B /* RoundedViews.swift in Sources */,
+				10439D0B2A38792E004C3C23 /* PointsView.swift in Sources */,
 				1044FD2B29E869DB00A34D0A /* GameView.swift in Sources */,
 				10C43D362A270F33000154FA /* Color.swift in Sources */,
 				1044FD5629E8848000A34D0A /* Game.swift in Sources */,

@@ -27,7 +27,7 @@ struct Game {
         return 100 + bonus - difference
     }
     
-    mutating func startNewRound(points: Int) {
+    mutating func startNewRound(with points: Int) {
         score += points
         round += 1
         generateNewTarget()

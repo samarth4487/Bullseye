@@ -48,28 +48,21 @@ struct GameView: View {
                 
                 BigNumberText(text: String(game.target))
                 
-                SliderView(sliderValue: $sliderValue)
-                    .padding()
-                
-                PrimaryButton(text: Constant.hitMe) {
-                    isAlertVisible.toggle()
-                }
-                .alert(
-                    "Hello there!",
-                    isPresented: $isAlertVisible,
-                    actions: {
-                        Button {
-                            game.startNewRound(points: game.points(for: Int(sliderValue.rounded())))
-                        } label: {
-                            Text("Awesome")
+                if isAlertVisible {
+                    PointsView(sliderValue: $sliderValue, isAlertVisible: $isAlertVisible, game: $game)
+                        .transition(.scale)
+                } else {
+                    SliderView(sliderValue: $sliderValue)
+                        .padding()
+                        .transition(.scale)
+                    
+                    PrimaryButton(text: Constant.hitMe) {
+                        withAnimation {
+                            isAlertVisible.toggle()
                         }
-                        
-                    },
-                    message: {
-                        let roundedSliderValue = Int(sliderValue.rounded())
-                        Text("You scored \(game.points(for: roundedSliderValue)) points.")
                     }
-                )
+                    .transition(.scale)
+                }
                 
                 Spacer()
                 
