@@ -13,4 +13,5 @@ extension Color {
     static let textColor = Color("TextColor")
     static let buttonStrokeColor = Color("ButtonStrokeColor")
     static let ringsColor = Color("RingsColor")
+    static let leaderboardRowColor = Color("LeaderboardRowColor")
 }

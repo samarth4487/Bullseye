@@ -10,6 +10,10 @@
 		1003FE4E2A2740AB0080F84B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003FE4D2A2740AB0080F84B /* Image.swift */; };
 		1003FE502A274A1F0080F84B /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003FE4F2A274A1F0080F84B /* RoundedViews.swift */; };
 		10439D0B2A38792E004C3C23 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10439D0A2A38792E004C3C23 /* PointsView.swift */; };
+		10439D0D2A3AB402004C3C23 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10439D0C2A3AB402004C3C23 /* LeaderboardView.swift */; };
+		10439D0F2A3AB43C004C3C23 /* LeaderboardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10439D0E2A3AB43C004C3C23 /* LeaderboardRow.swift */; };
+		10439D112A3AB919004C3C23 /* LeaderboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10439D102A3AB919004C3C23 /* LeaderboardHeaderView.swift */; };
+		10439D132A3AED1A004C3C23 /* LeaderboardLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10439D122A3AED1A004C3C23 /* LeaderboardLabelView.swift */; };
 		1044FD2929E869DB00A34D0A /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD2829E869DB00A34D0A /* BullseyeApp.swift */; };
 		1044FD2B29E869DB00A34D0A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044FD2A29E869DB00A34D0A /* GameView.swift */; };
 		1044FD2D29E869DC00A34D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1044FD2C29E869DC00A34D0A /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 		1003FE4D2A2740AB0080F84B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1003FE4F2A274A1F0080F84B /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		10439D0A2A38792E004C3C23 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		10439D0C2A3AB402004C3C23 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		10439D0E2A3AB43C004C3C23 /* LeaderboardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardRow.swift; sourceTree = "<group>"; };
+		10439D102A3AB919004C3C23 /* LeaderboardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardHeaderView.swift; sourceTree = "<group>"; };
+		10439D122A3AED1A004C3C23 /* LeaderboardLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardLabelView.swift; sourceTree = "<group>"; };
 		1044FD2529E869DB00A34D0A /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1044FD2829E869DB00A34D0A /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		1044FD2A29E869DB00A34D0A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -155,6 +163,10 @@
 				10C43D3D2A2717F7000154FA /* ButtonViews.swift */,
 				1003FE4F2A274A1F0080F84B /* RoundedViews.swift */,
 				10439D0A2A38792E004C3C23 /* PointsView.swift */,
+				10439D0C2A3AB402004C3C23 /* LeaderboardView.swift */,
+				10439D0E2A3AB43C004C3C23 /* LeaderboardRow.swift */,
+				10439D102A3AB919004C3C23 /* LeaderboardHeaderView.swift */,
+				10439D122A3AED1A004C3C23 /* LeaderboardLabelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,11 +332,15 @@
 				1003FE4E2A2740AB0080F84B /* Image.swift in Sources */,
 				1003FE502A274A1F0080F84B /* RoundedViews.swift in Sources */,
 				10439D0B2A38792E004C3C23 /* PointsView.swift in Sources */,
+				10439D0D2A3AB402004C3C23 /* LeaderboardView.swift in Sources */,
 				1044FD2B29E869DB00A34D0A /* GameView.swift in Sources */,
+				10439D132A3AED1A004C3C23 /* LeaderboardLabelView.swift in Sources */,
 				10C43D362A270F33000154FA /* Color.swift in Sources */,
 				1044FD5629E8848000A34D0A /* Game.swift in Sources */,
+				10439D0F2A3AB43C004C3C23 /* LeaderboardRow.swift in Sources */,
 				10C43D382A2712BC000154FA /* TextViews.swift in Sources */,
 				1044FD2929E869DB00A34D0A /* BullseyeApp.swift in Sources */,
+				10439D112A3AB919004C3C23 /* LeaderboardHeaderView.swift in Sources */,
 				10C43D3E2A2717F7000154FA /* ButtonViews.swift in Sources */,
 				10C43D3C2A271592000154FA /* SliderView.swift in Sources */,
 			);
@@ -488,6 +504,7 @@
 				DEVELOPMENT_TEAM = JRGTZSQ5R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Bullseye;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -517,6 +534,7 @@
 				DEVELOPMENT_TEAM = JRGTZSQ5R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Bullseye;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

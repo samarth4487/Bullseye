@@ -11,6 +11,7 @@ struct GameView: View {
     @State private var isAlertVisible: Bool = false
     @State private var sliderValue: Double = 50
     @State private var game: Game = Game()
+    @State private var isLeaderboardVisible: Bool = false
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -36,7 +37,10 @@ struct GameView: View {
                     Spacer()
                     
                     RoundedButton(image: Image.list) {
-                        
+                        isLeaderboardVisible.toggle()
+                    }
+                    .sheet(isPresented: $isLeaderboardVisible) {
+                        LeaderboardView(game: $game)
                     }
                 }
                 .padding()
@@ -69,14 +73,14 @@ struct GameView: View {
                 HStack {
                     VStack(spacing: 5) {
                         LabelText(text: Constant.score)
-                        RoundedTextView(text: String(game.score))
+                        RoundedRectTextView(text: String(game.score))
                     }
                     
                     Spacer()
                     
                     VStack {
                         LabelText(text: Constant.round)
-                        RoundedTextView(text: String(game.round))
+                        RoundedRectTextView(text: String(game.round))
                     }
                 }
                 .padding()

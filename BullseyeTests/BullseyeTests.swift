@@ -40,7 +40,7 @@ final class BullseyeTests: XCTestCase {
     
     func testStartNewRound() throws {
         let score = 100
-        game.startNewRound(points: score)
+        game.startNewRound(with: score)
         XCTAssertEqual(game.score, 100)
         XCTAssertEqual(game.round, 2)
     }
@@ -49,5 +49,17 @@ final class BullseyeTests: XCTestCase {
         game.restart()
         XCTAssertEqual(game.score, 0)
         XCTAssertEqual(game.round, 1)
+    }
+    
+    func testLeaderboard() throws {
+        XCTAssertEqual(game.leaderboardEntries.count, 0)
+        game.startNewRound(with: 100)
+        XCTAssertEqual(game.leaderboardEntries.count, 1)
+        XCTAssertEqual(game.leaderboardEntries[0].points, 100)
+        
+        game.startNewRound(with: 200)
+        XCTAssertEqual(game.leaderboardEntries.count, 2)
+        XCTAssertEqual(game.leaderboardEntries[0].points, 200)
+        XCTAssertEqual(game.leaderboardEntries[1].points, 100)
     }
 }

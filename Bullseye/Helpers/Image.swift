@@ -10,4 +10,5 @@ import SwiftUI
 extension Image {
     static let list = Image(systemName: "list.dash")
     static let retry = Image(systemName: "arrow.counterclockwise")
+    static let x = Image(systemName: "xmark")
 }

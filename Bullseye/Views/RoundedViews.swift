@@ -22,7 +22,7 @@ struct RoundedImageView: View {
     }
 }
 
-struct RoundedTextView: View {
+struct RoundedRectTextView: View {
     let text: String
     
     var body: some View {
@@ -41,10 +41,27 @@ struct RoundedTextView: View {
     }
 }
 
+struct RoundedTextView: View {
+    let text: String
+    
+    var body: some View {
+        Text(text)
+            .bold()
+            .font(.title3)
+            .foregroundColor(Color.textColor)
+            .frame(width: 56, height: 56)
+            .overlay(
+                Circle()
+                    .strokeBorder(Color.leaderboardRowColor, lineWidth: 2)
+            )
+    }
+}
+
 struct RoundedViews_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             RoundedTextView(text: "999")
+            RoundedRectTextView(text: "999")
             RoundedImageView(image: Image.list)
         }
     }
